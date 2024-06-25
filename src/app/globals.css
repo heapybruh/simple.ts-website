@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+* https://www.typescriptlang.org/branding
+* #3178C6 converts to 49, 120, 198
+* #235A97 converts to 35, 90, 151
+* #2a68ad converts to 42, 104, 173 (button hover)
+*/
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 49, 120, 198; 
+  --button-rgb: 35, 90, 151;
+  --button-hover-rgb: 42, 104, 173;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+button {
+  background: rgb(var(--button-rgb));
+  transition: 0.3s;
+}
+
+button:hover {
+  background: rgb(var(--button-hover-rgb));
+}
